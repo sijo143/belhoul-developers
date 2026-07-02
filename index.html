@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belhoul Developers | Coming Soon</title>
+    <!-- Linking modular stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Interactive golden canvas background -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Luxury vignette and image layout overlays -->
+    <div class="bg-vignette"></div>
+    <div class="parallax-container" id="bgWrapper">
+        <div class="bg-image-wrapper"></div>
+    </div>
+
+    <main class="main-container">
+        <!-- Bilingual responsive header branding logo -->
+        <div class="logo-container">
+            <img id="mainLogo" src="Logo.png" alt="Belhoul Developers Logo" onerror="handleLogoError()">
+            
+            <!-- Elegant fail-safe SVG / typographic fallback in case Logo.png fails to load -->
+            <div id="fallbackLogo" class="fallback-logo hidden">
+                <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 15 H60 C75 15 80 25 80 35 C80 45 70 50 60 50 C75 50 80 60 80 75 C80 90 65 90 45 90 H20 V15 Z" stroke="#c5a059" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 50 H55" stroke="#c5a059" stroke-width="6"/>
+                    <rect x="35" y="30" width="10" height="10" fill="#c5a059"/>
+                </svg>
+                <h2 class="fallback-title-ar">مطورو بالهول</h2>
+                <h2 class="fallback-title-en">BELHOUL DEVELOPERS</h2>
+            </div>
+        </div>
+
+        <!-- Spacious, elegant hero section -->
+        <div class="coming-soon-wrapper">
+            <h1 class="coming-soon-title">COMING SOON</h1>
+        </div>
+    </main>
+
+    <!-- Linking modular javascript -->
+    <script src="assets/js/main.js">
